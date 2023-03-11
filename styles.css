@@ -1,0 +1,286 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --grey-green: #D7E9DA;
+    --click: #979797;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0;
+    /* font-family: 'Quicksand', sans-serif;
+    font-weight: bold; */
+    font: small-caps bold 20px/1 sans-serif;
+  }
+  /* General container */
+  .container {
+    margin: auto;;
+    width: 75%;
+  }
+  .container h1 {
+    text-align: center;
+    font-size: larger;
+  }
+  .container-calc {
+    background: var(--hospital-green);
+    margin: auto;;
+    width: 100%;
+    padding: 40px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+
+  /* Initial Amount */
+  .calc-amount {
+    margin-bottom: 20px;
+  }
+  .calc-amount label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .calc-amount-flex {
+    display:flex;
+    flex-direction: row;
+  }
+  .calc-amount-symbol,
+  .calc-amount input,
+  .calc-amount-reset {
+    display: inline-block;
+    background: var(--white);
+    height: 35px;
+    border: 2px solid var(--black);
+  }
+  .calc-amount-symbol,
+  .calc-amount-reset {
+    padding: 1px;
+    text-align: center;
+    line-height: 35px;
+    width: 10%;
+  }
+  .calc-amount-symbol {
+    border-radius: 6px 0 0 6px;
+  }
+  .calc-amount-reset {
+    border-radius: 0 6px 6px 0;
+  }
+  .calc-amount input {
+    margin: 0 2px;
+    padding-left: 10px;
+    width: 80%;
+    font-size: medium;
+    font-weight: bold;
+  }
+  .calc-amount-reset:hover {
+    background: var(--very-light-pink);
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 0 3px;
+  }
+  .calc-amount-reset:active {
+    background: var(--click);
+    transform: translateY(3px);
+    cursor: pointer;
+    box-shadow: 0 0;
+  }
+
+  
+  /* Interest Rate */
+  .calc-rate {
+    margin-bottom: 20px;
+  }
+  .calc-rate label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .calc-rate-flex {
+    display:flex;
+    flex-direction: row;
+  }
+  .calc-rate input,
+  .calc-rate-symbol,
+  .calc-rate select {
+    display: inline-block;
+    background: var(--white);
+    height: 35px;
+    border: 2px solid var(--black);
+  }
+  .calc-rate input,
+  .calc-rate select {
+    padding: 1px 2px 1px 10px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  .calc-rate input {
+    margin: 0 2px;
+    width: 40%;
+    border-radius: 6px 0 0 6px;
+  }
+  .calc-rate-symbol {
+    padding: 1px;
+    text-align: center;
+    line-height: 35px;
+    width: 10%;
+    border-radius: 0 6px 6px 0;
+  }
+  .calc-rate select {
+    line-height: 35px;
+    width: 50%;
+    border-radius: 6px;
+    margin-left: 10px;
+    box-sizing: content-box;
+  }
+  .calc-rate select option{
+    font-weight: bold;
+  }
+
+  
+  /* Interest Time */
+  .calc-interest {
+    margin-bottom: 20px;
+  }
+  .calc-interest label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .calc-interest select {
+    display: inline-block;
+    background: var(--white);
+    border: 2px solid var(--black);
+    padding: 1px 2px 1px 10px;
+    font-size: medium;
+    font-weight: bold;
+    width: 45%;
+    border-radius: 6px;
+    height: 35px;
+    box-sizing: content-box;
+  }
+  .calc-interest select option{
+    font-weight: bold;
+  }
+
+  
+  /* Period */
+  .calc-period {
+    margin-bottom: 20px;
+  }
+  .calc-period label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .calc-period-flex {
+    display:flex;
+    flex-direction: row;
+  }
+  .calc-period input,
+  .calc-period select {
+    display: inline-block;
+    background: var(--white);
+    height: 35px;
+    border: 2px solid var(--black);
+    padding: 1px 2px 1px 10px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .calc-period input {
+    margin: 0 2px;
+    width: 50%;
+  }
+  .calc-period select {
+    line-height: 35px;
+    width: 50%;
+    margin-left: 10px;
+    box-sizing: content-box;
+  }
+  .calc-period select option{
+    font-weight: bold;
+  }
+
+
+  /* Buttons */
+  .calc-buttons{
+    display:flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+  }
+  .calc-buttons button{
+    background: var(--very-light-pink);
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    font: small-caps bold 16px/1 sans-serif;
+    border: 2px solid var(--black);
+    border-radius: 6px;
+  }
+  .calc-buttons button:hover{
+    background: var(--white);
+    transform: translateY(-2px);
+    cursor: pointer;
+    box-shadow: 0 3px;
+  }
+  .calc-buttons button:active{
+    background: var(--click);
+    transform: translateY(2px);
+    cursor: pointer;
+    box-shadow: 0 0;
+  }
+
+
+  /* Results */
+  .calc-result {
+    margin: 20px 0;
+  }
+  .calc-result label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .calc-result-flex {
+    display:flex;
+    flex-direction: row;
+  }
+  .calc-result-symbol,
+  .calc-result input {
+    display: inline-block;
+    background: var(--grey-green);
+    height: 35px;
+    border: 2px solid var(--black);
+  }
+  .calc-result-symbol {
+    padding: 1px;
+    text-align: center;
+    line-height: 35px;
+    width: 10%;
+    border-radius: 6px 0 0 6px;
+  }
+  .calc-result input {
+    margin: 0 2px;
+    padding-left: 10px;
+    width: 90%;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 0 6px 6px 0;
+  }
+
+
+
+  /* CSS media query within a style sheet */
+  @media (max-width: 600px) {
+    .calc-buttons{
+      flex-direction: column;
+    }
+    .container {
+      width: 90%;
+    }
+  }

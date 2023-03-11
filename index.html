@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Interes Compuesto</h1>
+        <div class="container-calc">
+
+            <div class="calc-amount">
+                <label for="amount">Inversion Inicial</label>
+                <div class="calc-amount-flex">
+                    <span class="calc-amount-symbol">$</span>
+                    <input type="number" name="amount" id="amount" placeholder="0">
+                    <span class="calc-amount-reset">&#x2715</span>
+                </div>
+            </div>
+
+            <div class="calc-rate">
+                <label for="rate">Tasa de Interes</label>
+                <div class="calc-rate-flex">
+                    <input type="number" name="rate" id="rate" placeholder="0">
+                    <span class="calc-rate-symbol">%</span>
+                    <select name="rate-time" id="rate-time"></select>
+                </div>
+            </div>
+
+            <div class="calc-interest">
+                <label for="interest">Capitalizacion</label>
+                <select name="interest" id="interest"></select>
+            </div>
+
+            <div class="calc-period">
+                <label for="period">Plazo</label>
+                <div class="calc-period-flex">
+                    <input type="number" name="period" id="period" placeholder="0">
+                    <select name="period-time" id="period-time"></select>
+                </div>
+            </div>
+
+            <div class="calc-buttons">
+                <button id="button-calc">&#128425 Calcular</button>
+                <button id="button-reset">&#x2715 Reiniciar</button>
+            </div>
+
+            <div class="calc-result">
+                <label for="result">Valor Futuro</label>
+                <div class="calc-result-flex">
+                    <span class="calc-result-symbol">$</span>
+                    <input type="text" name="result" id="result" readOnly="true" placeholder="0">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
